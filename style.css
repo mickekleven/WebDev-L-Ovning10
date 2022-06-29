@@ -1,0 +1,60 @@
+.pres-main {
+    background: #CCC;
+    width: 100%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-container {
+    max-width: 800px;
+    width: 100%;
+
+}
+
+
+.rotate {
+    max-width: 20rem;
+    animation: kf-rotate 850ms 1 ease-in;
+}
+
+/*
+    Keyframes - Animations
+*/
+
+#cardItem {
+    margin: 0 auto;
+    width:10rem;
+}
+
+#cardItem:hover {
+    filter:blur(4px);
+}
+
+@keyframes kf-rotate {
+    0% {
+        box-shadow: 0;
+        tansform: rotate(0deg);
+    }
+
+    100% {
+
+        box-shadow: 20px 0px 0px 10px gray;
+        transform: rotate(180deg);
+    }
+}
+
+
+
+.flx-main {
+    display:flex;
+    width: 15rem;
+}
+
+.flx-main__ch {
+    flex: 0 1 49%; 
+}
